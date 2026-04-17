@@ -1,6 +1,9 @@
-// REVIEW BEFORE SHIP — The Capgemini role summary below is a drafted stub
-// based on a public LinkedIn scrape that was login-walled. Please review and
-// correct the title, exact period, and bullets before publishing.
+// REVIEW BEFORE SHIP — The roles below are drafted stubs inferred from
+// public repos and LinkedIn data that was login-walled. Please correct the
+// titles, exact periods, and bullets before publishing:
+//   - Capgemini (Software Engineer, 2023 – Present)
+//   - Xalantis (Frontend Developer, 2022 – 2023)
+//   - Web Winner Agency (Frontend Developer, 2021 – 2022)
 
 export type Experience = {
   company: string;
@@ -57,13 +60,35 @@ export const LINKEDIN: LinkedInProfile = {
     {
       company: "Capgemini",
       title: "Software Engineer",
-      period: "2022 – Present",
+      period: "2023 – Present",
       location: "Lisboa, Portugal",
       bullets: [
         "Building and maintaining enterprise web applications across Java, TypeScript, and cloud stacks.",
         "Collaborating with distributed teams on feature delivery, code review, and production support.",
         "Focus on reliability, automated testing, and developer-experience improvements.",
-        "// draft — please confirm role title, team, and bullets before publishing.",
+        "// draft — please confirm role title, exact period, team, and bullets before publishing.",
+      ],
+    },
+    {
+      company: "Xalantis",
+      title: "Frontend Developer",
+      period: "2022 – 2023",
+      location: "Lisboa, Portugal",
+      bullets: [
+        "Delivered Vue.js client sites and Node.js APIs — Sednai, BFRI (Stamina, Abreu), ECQ Digital Transition, Magnolia API, Camelia API.",
+        "Full ownership from design hand-off to production deploy.",
+        "// draft — please confirm exact title, period, and bullets before publishing.",
+      ],
+    },
+    {
+      company: "Web Winner Agency (WWA)",
+      title: "Frontend Developer",
+      period: "2021 – 2022",
+      location: "Portugal",
+      bullets: [
+        "Built Vue.js client sites and templates — IKEA template, Majestic v2, Magnolia, Douro Wines tourism site.",
+        "Worked directly with designers to turn static mockups into responsive production pages.",
+        "// draft — please confirm exact title, period, and bullets before publishing.",
       ],
     },
     {
@@ -72,7 +97,7 @@ export const LINKEDIN: LinkedInProfile = {
       period: "2021 – Present",
       location: "Remote",
       bullets: [
-        "Shipped 10+ full-stack apps: AI finance tracker, restaurant POS, streaming bot, driving-school CRM, and more.",
+        "Shipped 50+ public repos: AI finance tracker, restaurant POS, streaming bot, driving-school CRM, ERP systems, and more.",
         "Integrated the Anthropic and OpenAI APIs for categorization, content suggestions, and highlight detection.",
         "End-to-end delivery: design → build → deploy → operate (Railway, Vercel, Fly.io).",
       ],
