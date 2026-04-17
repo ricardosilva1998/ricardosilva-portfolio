@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ContactBlock } from "@/components/home/ContactBlock";
 import { LINKEDIN } from "@/data/linkedin";
 import { PROJECTS } from "@/data/projects";
 import { AsciiBox } from "@/components/terminal/AsciiBox";
@@ -287,11 +286,55 @@ export default function HomePage() {
                 <ExternalLink className="size-3" />
               </a>
             </TypedSection>
+
+            {/* 11 · contact */}
+            <TypedSection index={11} prompt="cat ~/.contact" heading="## contact">
+              <AsciiBox title=".contact" tone="amber" corner="chmod 600">
+                <ul className="divide-y divide-[var(--color-border)] font-mono">
+                  <ContactRow keyName="github" label="github.com/ricardosilva1998" href="https://github.com/ricardosilva1998" icon="↗" external />
+                  <ContactRow keyName="linkedin" label="linkedin.com/in/ricardosilva98" href="https://www.linkedin.com/in/ricardosilva98/" icon="↗" external />
+                  <ContactRow keyName="email" label="ricardomrbs1998@gmail.com" href="mailto:ricardomrbs1998@gmail.com" icon="✉" />
+                  <ContactRow keyName="cv" label="./ricardo-silva-cv.pdf" href="/cv/ricardo-silva-cv.pdf" icon="⇣" />
+                </ul>
+              </AsciiBox>
+            </TypedSection>
           </div>
         </TerminalWindow>
       </div>
-      <ContactBlock />
     </article>
+  );
+}
+
+function ContactRow({
+  keyName,
+  label,
+  href,
+  icon,
+  external,
+}: {
+  keyName: string;
+  label: string;
+  href: string;
+  icon: string;
+  external?: boolean;
+}) {
+  return (
+    <li>
+      <a
+        href={href}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noreferrer" : undefined}
+        className="grid grid-cols-[90px_1fr_auto] items-center gap-3 px-1 py-2 text-sm transition hover:bg-[var(--color-bg-elev)]"
+      >
+        <span className="text-xs uppercase tracking-wider text-[var(--color-phosphor-mute)]">
+          {keyName}
+        </span>
+        <span className="truncate text-[var(--color-phosphor)] phosphor-glow-soft">
+          {label}
+        </span>
+        <span className="text-xs text-[var(--color-phosphor-dim)]">{icon}</span>
+      </a>
+    </li>
   );
 }
 
