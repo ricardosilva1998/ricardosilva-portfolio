@@ -74,8 +74,8 @@ function MobileNav() {
       <a href="/" className="px-3 py-1 text-[var(--color-phosphor-dim)]">
         ~/home
       </a>
-      <a href="/linkedin" className="px-3 py-1 text-[var(--color-phosphor-dim)]">
-        ~/linkedin
+      <a href="/projects" className="px-3 py-1 text-[var(--color-phosphor-dim)]">
+        ~/projects
       </a>
       <a
         href="https://github.com/ricardosilva1998"

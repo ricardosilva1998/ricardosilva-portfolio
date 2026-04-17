@@ -19,7 +19,7 @@ export default function NotFound() {
             the path you typed doesn&apos;t resolve to a known route.
           </div>
           <div className="pt-2 text-xs text-[var(--color-phosphor-mute)]">
-            {"// try ~/home, ~/linkedin or any project under ~/projects/"}
+            {"// try ~/home or ~/projects"}
           </div>
         </div>
       </AsciiBox>
@@ -31,10 +31,10 @@ export default function NotFound() {
           cd ~
         </Link>
         <Link
-          href="/linkedin"
+          href="/projects"
           className="inline-flex items-center gap-2 rounded-sm border border-[var(--color-border-bright)] px-3 py-1.5 text-xs uppercase tracking-widest text-[var(--color-phosphor-dim)] transition hover:text-[var(--color-phosphor)]"
         >
-          cd ~/linkedin
+          cd ~/projects
         </Link>
       </div>
     </section>

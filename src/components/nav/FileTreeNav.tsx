@@ -7,7 +7,7 @@ type Leaf = { label: string; href: string };
 
 const ROOT: Leaf[] = [
   { label: "~/home.md", href: "/" },
-  { label: "~/linkedin.md", href: "/linkedin" },
+  { label: "~/projects.md", href: "/projects" },
 ];
 
 export function FileTreeNav() {

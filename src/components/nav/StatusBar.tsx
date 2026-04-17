@@ -23,10 +23,7 @@ function useClock() {
 
 function pathToTitle(pathname: string): string {
   if (pathname === "/") return "~";
-  if (pathname === "/linkedin") return "~/linkedin.md";
-  if (pathname.startsWith("/projects/")) {
-    return `~/projects/${pathname.slice("/projects/".length)}.md`;
-  }
+  if (pathname === "/projects") return "~/projects.md";
   return pathname;
 }
 
