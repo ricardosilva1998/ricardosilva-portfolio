@@ -24,7 +24,7 @@ export function ProjectsGrid() {
           ))}
         </div>
         <div className="border-t border-[var(--color-border)] pt-3 text-xs text-[var(--color-phosphor-mute)]">
-          {"// tip: click ./preview to run an interactive mock inside a modal"}
+          {"// click ./repo to view the source · ./live opens the deployed site when available"}
         </div>
       </div>
     </section>
