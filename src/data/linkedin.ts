@@ -91,17 +91,6 @@ export const LINKEDIN: LinkedInProfile = {
         "// draft — please confirm exact title, period, and bullets before publishing.",
       ],
     },
-    {
-      company: "Personal projects & freelance",
-      title: "Independent full-stack engineer",
-      period: "2021 – Present",
-      location: "Remote",
-      bullets: [
-        "Shipped 50+ public repos: AI finance tracker, restaurant POS, streaming bot, driving-school CRM, ERP systems, and more.",
-        "Integrated the Anthropic and OpenAI APIs for categorization, content suggestions, and highlight detection.",
-        "End-to-end delivery: design → build → deploy → operate (Railway, Vercel, Fly.io).",
-      ],
-    },
   ],
   education: [
     {
