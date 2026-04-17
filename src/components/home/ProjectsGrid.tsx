@@ -8,7 +8,7 @@ export function ProjectsGrid() {
       aria-labelledby="projects-heading"
       className="px-4 pb-14 sm:px-8"
     >
-      <div className="mx-auto max-w-5xl space-y-5">
+      <div className="mx-auto max-w-6xl space-y-5">
         <div className="flex flex-wrap items-baseline justify-between gap-2 text-xs text-[var(--color-phosphor-dim)]">
           <Prompt path="~/projects">ls -la --color</Prompt>
           <span className="text-[var(--color-phosphor-mute)]">
@@ -18,7 +18,7 @@ export function ProjectsGrid() {
         <h2 id="projects-heading" className="sr-only">
           Projects
         </h2>
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {PROJECTS.map((project, i) => (
             <ProjectCard key={project.slug} project={project} index={i} />
           ))}

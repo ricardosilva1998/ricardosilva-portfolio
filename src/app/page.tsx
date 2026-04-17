@@ -24,13 +24,13 @@ function sectionTimings(index: number, promptLen: number) {
 export default function HomePage() {
   return (
     <article className="pb-8">
-      <div className="mx-auto max-w-4xl px-4 pt-6 sm:px-8 sm:pt-10">
+      <div className="mx-auto max-w-6xl px-4 pt-6 sm:px-6 sm:pt-8 lg:px-8 lg:pt-10">
         <TerminalWindow
           title="ricardo@silva: ~"
           subtitle="login shell · zsh 5.9"
           bodyClassName="bg-[var(--color-bg)]"
         >
-          <div className="space-y-10 p-6 sm:p-10">
+          <div className="space-y-8 p-4 sm:space-y-10 sm:p-6 lg:p-10">
             {/* hero */}
             <section>
               <div className="mb-3 text-xs text-[var(--color-phosphor-mute)] sm:text-sm">
@@ -357,8 +357,8 @@ function TypedSection({
 
   return (
     <section className="space-y-3">
-      <div className="flex flex-wrap items-baseline justify-between gap-2 text-xs text-[var(--color-phosphor-dim)]">
-        <div className="flex items-baseline gap-1">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 text-xs text-[var(--color-phosphor-dim)]">
+        <span className="break-words">
           <span className="text-[var(--color-phosphor-dim)]">ricardo@silva</span>
           <span className="text-[var(--color-phosphor-mute)]">:</span>
           <span className="text-[var(--color-cyan)]">~</span>
@@ -369,7 +369,7 @@ function TypedSection({
             charDelay={CHAR_DELAY}
             className="text-[var(--color-phosphor)] phosphor-glow-soft"
           />
-        </div>
+        </span>
         {heading && (
           <h2
             className="text-sm text-[var(--color-amber)] phosphor-glow-soft"

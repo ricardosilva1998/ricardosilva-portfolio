@@ -16,7 +16,7 @@ export default function ProjectsPage() {
 
   return (
     <article className="pb-8">
-      <header className="mx-auto max-w-5xl space-y-2 px-4 pb-4 pt-6 sm:px-8 sm:pt-10">
+      <header className="mx-auto max-w-6xl space-y-2 px-4 pb-4 pt-6 sm:px-6 sm:pt-8 lg:px-8 lg:pt-10">
         <div className="flex items-baseline gap-2 text-xs text-[var(--color-phosphor-dim)]">
           <Prompt path="~">cd ~/projects</Prompt>
           <BlinkCursor className="ml-1" />
