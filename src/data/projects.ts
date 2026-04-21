@@ -507,6 +507,15 @@ export const PROJECTS: Project[] = [
     repoUrl: "https://github.com/ricardosilva1998/curso-react-para-iniciante",
     year: 2021,
   },
+  {
+    slug: "bambulab-automation",
+    name: "Bambulab Automation",
+    shellName: "bambulab-automation",
+    tagline: "Upload a 3D model → admin approves → it prints on a Bambu Lab P2S. Next.js 16 + Postgres + pg-boss + Bambu Studio CLI on Railway.",
+    stack: ["typescript"],
+    repoUrl: "https://github.com/ricardosilva1998/bambulab-automation",
+    year: 2026,
+  },
 ];
 
 export function findProject(slug: string): Project | undefined {
