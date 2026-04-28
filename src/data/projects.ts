@@ -516,6 +516,15 @@ export const PROJECTS: Project[] = [
     repoUrl: "https://github.com/ricardosilva1998/bambulab-automation",
     year: 2026,
   },
+  {
+    slug: "house-rent",
+    name: "House Rent",
+    shellName: "house-rent",
+    tagline: "_no description_",
+    stack: ["typescript"],
+    repoUrl: "https://github.com/ricardosilva1998/house-rent",
+    year: 2026,
+  },
 ];
 
 export function findProject(slug: string): Project | undefined {
